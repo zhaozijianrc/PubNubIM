@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MessageTableViewCell : UITableViewCell
-
+@property (nonatomic,weak) IBOutlet UILabel *textLable;
+@property (nonatomic,weak) IBOutlet UIImageView *iconImage;
 @end

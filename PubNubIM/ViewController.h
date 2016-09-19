@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "PubNub.h"
+#import "AppDelegate.h"
+@interface ViewController : UIViewController<PNObjectEventListener>
+@property (nonatomic) PubNub *client;
+@property (nonatomic,strong) NSString *userId;
 
 @end
 

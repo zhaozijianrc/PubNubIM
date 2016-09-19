@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1DB02D17E00D2B0869B727 /* libPods-PubNubIM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4632C74D729EF2013A416A28 /* libPods-PubNubIM.a */; };
 		51A74F601D740FC500DA29B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A74F5F1D740FC500DA29B0 /* main.m */; };
 		51A74F631D740FC500DA29B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A74F621D740FC500DA29B0 /* AppDelegate.m */; };
 		51A74F661D740FC500DA29B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A74F651D740FC500DA29B0 /* ViewController.m */; };
@@ -15,6 +16,14 @@
 		51A74F6E1D740FC500DA29B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A74F6C1D740FC500DA29B0 /* LaunchScreen.storyboard */; };
 		51A74F791D740FC500DA29B0 /* PubNubIMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A74F781D740FC500DA29B0 /* PubNubIMTests.m */; };
 		51A74F841D740FC500DA29B0 /* PubNubIMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A74F831D740FC500DA29B0 /* PubNubIMUITests.m */; };
+		51A750941D743BCE00DA29B0 /* chatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A750931D743BCE00DA29B0 /* chatMessage.m */; };
+		51A750971D7444CC00DA29B0 /* ZZJ_SqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51A750961D7444CC00DA29B0 /* ZZJ_SqliteManager.m */; };
+		CD0137AEA12E34983D47BA62 /* libPods-PubNubIMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2495B14D5C7DF0F0EA3F3475 /* libPods-PubNubIMUITests.a */; };
+		CE11F48D286DF7C48CB4553E /* libPods-PubNubIMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 271864A7EF67AAAAB9FBE669 /* libPods-PubNubIMTests.a */; };
+		E01A86D21D7531D800049301 /* OutGoingCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01A86D11D7531D800049301 /* OutGoingCellTableViewCell.xib */; };
+		E01A86D41D75327000049301 /* IncomingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E01A86D31D75327000049301 /* IncomingTableViewCell.xib */; };
+		E01A86D71D75339000049301 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E01A86D61D75339000049301 /* MessageTableViewCell.m */; };
+		E0DC4D691D79242B00E2D3BC /* CMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DC4D681D79242B00E2D3BC /* CMethods.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220388536F732E68945B7A2E /* Pods-PubNubIMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIMTests/Pods-PubNubIMTests.release.xcconfig"; sourceTree = "<group>"; };
+		2495B14D5C7DF0F0EA3F3475 /* libPods-PubNubIMUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PubNubIMUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		271864A7EF67AAAAB9FBE669 /* libPods-PubNubIMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PubNubIMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30194C9D3196BB9228037D58 /* Pods-PubNubIM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIM/Pods-PubNubIM.debug.xcconfig"; sourceTree = "<group>"; };
+		4632C74D729EF2013A416A28 /* libPods-PubNubIM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PubNubIM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A74F5B1D740FC500DA29B0 /* PubNubIM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PubNubIM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A74F5F1D740FC500DA29B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		51A74F611D740FC500DA29B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		51A74F621D740FC500DA29B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		51A74F641D740FC500DA29B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		51A74F651D740FC500DA29B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		51A74F611D740FC500DA29B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		51A74F621D740FC500DA29B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		51A74F641D740FC500DA29B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		51A74F651D740FC500DA29B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		51A74F681D740FC500DA29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51A74F6A1D740FC500DA29B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51A74F6D1D740FC500DA29B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,20 @@
 		51A74F7F1D740FC500DA29B0 /* PubNubIMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PubNubIMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A74F831D740FC500DA29B0 /* PubNubIMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PubNubIMUITests.m; sourceTree = "<group>"; };
 		51A74F851D740FC500DA29B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51A750921D743BCE00DA29B0 /* chatMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chatMessage.h; path = ../../chatMessage.h; sourceTree = "<group>"; };
+		51A750931D743BCE00DA29B0 /* chatMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = chatMessage.m; path = ../../chatMessage.m; sourceTree = "<group>"; };
+		51A750951D7444CC00DA29B0 /* ZZJ_SqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZJ_SqliteManager.h; path = ../../ZZJ_SqliteManager.h; sourceTree = "<group>"; };
+		51A750961D7444CC00DA29B0 /* ZZJ_SqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZJ_SqliteManager.m; path = ../../ZZJ_SqliteManager.m; sourceTree = "<group>"; };
+		6626CBD14483FFB3AD59CF01 /* Pods-PubNubIMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIMUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIMUITests/Pods-PubNubIMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8183BB2B6A4D31A76E1D9023 /* Pods-PubNubIM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIM.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIM/Pods-PubNubIM.release.xcconfig"; sourceTree = "<group>"; };
+		8D9191636F5A36C8BC12F35C /* Pods-PubNubIMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIMTests/Pods-PubNubIMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E01A86D11D7531D800049301 /* OutGoingCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OutGoingCellTableViewCell.xib; path = ../../OutGoingCellTableViewCell.xib; sourceTree = "<group>"; };
+		E01A86D31D75327000049301 /* IncomingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IncomingTableViewCell.xib; path = ../../IncomingTableViewCell.xib; sourceTree = "<group>"; };
+		E01A86D51D75339000049301 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageTableViewCell.h; path = ../../MessageTableViewCell.h; sourceTree = "<group>"; };
+		E01A86D61D75339000049301 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageTableViewCell.m; path = ../../MessageTableViewCell.m; sourceTree = "<group>"; };
+		E0DC4D671D79242B00E2D3BC /* CMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMethods.h; path = ../CMethods.h; sourceTree = "<group>"; };
+		E0DC4D681D79242B00E2D3BC /* CMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMethods.m; path = ../CMethods.m; sourceTree = "<group>"; };
+		FE1788C60246172684994E33 /* Pods-PubNubIMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubNubIMUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubNubIMUITests/Pods-PubNubIMUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1DB02D17E00D2B0869B727 /* libPods-PubNubIM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11F48D286DF7C48CB4553E /* libPods-PubNubIMTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0137AEA12E34983D47BA62 /* libPods-PubNubIMUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +116,8 @@
 				51A74F771D740FC500DA29B0 /* PubNubIMTests */,
 				51A74F821D740FC500DA29B0 /* PubNubIMUITests */,
 				51A74F5C1D740FC500DA29B0 /* Products */,
+				C30AD0346B4E0B0DADB60DBA /* Pods */,
+				BF8D1E24B9F14A958EDDD865 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +134,11 @@
 		51A74F5D1D740FC500DA29B0 /* PubNubIM */ = {
 			isa = PBXGroup;
 			children = (
-				51A74F611D740FC500DA29B0 /* AppDelegate.h */,
-				51A74F621D740FC500DA29B0 /* AppDelegate.m */,
-				51A74F641D740FC500DA29B0 /* ViewController.h */,
-				51A74F651D740FC500DA29B0 /* ViewController.m */,
-				51A74F671D740FC500DA29B0 /* Main.storyboard */,
-				51A74F6A1D740FC500DA29B0 /* Assets.xcassets */,
-				51A74F6C1D740FC500DA29B0 /* LaunchScreen.storyboard */,
-				51A74F6F1D740FC500DA29B0 /* Info.plist */,
+				E0DC4DE81D79315A00E2D3BC /* controller */,
+				E0DC4DE91D79315A00E2D3BC /* Model */,
+				E0DC4DEA1D79315A00E2D3BC /* Other */,
+				E0DC4DEC1D79319C00E2D3BC /* Share */,
+				E0DC4DEB1D79315A00E2D3BC /* View */,
 				51A74F5E1D740FC500DA29B0 /* Supporting Files */,
 			);
 			path = PubNubIM;
@@ -117,6 +147,10 @@
 		51A74F5E1D740FC500DA29B0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				51A74F671D740FC500DA29B0 /* Main.storyboard */,
+				51A74F6A1D740FC500DA29B0 /* Assets.xcassets */,
+				51A74F6C1D740FC500DA29B0 /* LaunchScreen.storyboard */,
+				51A74F6F1D740FC500DA29B0 /* Info.plist */,
 				51A74F5F1D740FC500DA29B0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +174,83 @@
 			path = PubNubIMUITests;
 			sourceTree = "<group>";
 		};
+		BF8D1E24B9F14A958EDDD865 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4632C74D729EF2013A416A28 /* libPods-PubNubIM.a */,
+				271864A7EF67AAAAB9FBE669 /* libPods-PubNubIMTests.a */,
+				2495B14D5C7DF0F0EA3F3475 /* libPods-PubNubIMUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30AD0346B4E0B0DADB60DBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30194C9D3196BB9228037D58 /* Pods-PubNubIM.debug.xcconfig */,
+				8183BB2B6A4D31A76E1D9023 /* Pods-PubNubIM.release.xcconfig */,
+				8D9191636F5A36C8BC12F35C /* Pods-PubNubIMTests.debug.xcconfig */,
+				220388536F732E68945B7A2E /* Pods-PubNubIMTests.release.xcconfig */,
+				6626CBD14483FFB3AD59CF01 /* Pods-PubNubIMUITests.debug.xcconfig */,
+				FE1788C60246172684994E33 /* Pods-PubNubIMUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0DC4DE81D79315A00E2D3BC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				51A74F641D740FC500DA29B0 /* ViewController.h */,
+				51A74F651D740FC500DA29B0 /* ViewController.m */,
+			);
+			name = controller;
+			path = "C Methods/controller";
+			sourceTree = "<group>";
+		};
+		E0DC4DE91D79315A00E2D3BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51A750921D743BCE00DA29B0 /* chatMessage.h */,
+				51A750931D743BCE00DA29B0 /* chatMessage.m */,
+			);
+			name = Model;
+			path = "C Methods/Model";
+			sourceTree = "<group>";
+		};
+		E0DC4DEA1D79315A00E2D3BC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				51A74F611D740FC500DA29B0 /* AppDelegate.h */,
+				51A74F621D740FC500DA29B0 /* AppDelegate.m */,
+			);
+			name = Other;
+			path = "C Methods/Other";
+			sourceTree = "<group>";
+		};
+		E0DC4DEB1D79315A00E2D3BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E01A86D51D75339000049301 /* MessageTableViewCell.h */,
+				E01A86D61D75339000049301 /* MessageTableViewCell.m */,
+				E01A86D11D7531D800049301 /* OutGoingCellTableViewCell.xib */,
+				E01A86D31D75327000049301 /* IncomingTableViewCell.xib */,
+			);
+			name = View;
+			path = "C Methods/View";
+			sourceTree = "<group>";
+		};
+		E0DC4DEC1D79319C00E2D3BC /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				E0DC4D671D79242B00E2D3BC /* CMethods.h */,
+				E0DC4D681D79242B00E2D3BC /* CMethods.m */,
+				51A750951D7444CC00DA29B0 /* ZZJ_SqliteManager.h */,
+				51A750961D7444CC00DA29B0 /* ZZJ_SqliteManager.m */,
+			);
+			name = Share;
+			path = "C Methods/Share";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51A74F881D740FC500DA29B0 /* Build configuration list for PBXNativeTarget "PubNubIM" */;
 			buildPhases = (
+				31092696A7073F9678901A24 /* [CP] Check Pods Manifest.lock */,
 				51A74F571D740FC500DA29B0 /* Sources */,
 				51A74F581D740FC500DA29B0 /* Frameworks */,
 				51A74F591D740FC500DA29B0 /* Resources */,
+				E0FFB1D901C6C2C93C3F5B3F /* [CP] Embed Pods Frameworks */,
+				F802B2468FBAE057ECBEB73B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51A74F8B1D740FC500DA29B0 /* Build configuration list for PBXNativeTarget "PubNubIMTests" */;
 			buildPhases = (
+				477B78916D6913EC7F0D31B8 /* [CP] Check Pods Manifest.lock */,
 				51A74F701D740FC500DA29B0 /* Sources */,
 				51A74F711D740FC500DA29B0 /* Frameworks */,
 				51A74F721D740FC500DA29B0 /* Resources */,
+				02EC1AC876E73F65FC47BB65 /* [CP] Embed Pods Frameworks */,
+				4255D4D95AAB4405F304A593 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51A74F8E1D740FC500DA29B0 /* Build configuration list for PBXNativeTarget "PubNubIMUITests" */;
 			buildPhases = (
+				9937142DD1452B9A78791AE4 /* [CP] Check Pods Manifest.lock */,
 				51A74F7B1D740FC500DA29B0 /* Sources */,
 				51A74F7C1D740FC500DA29B0 /* Frameworks */,
 				51A74F7D1D740FC500DA29B0 /* Resources */,
+				5BD3A776E7AE779CE43D58EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +326,7 @@
 				TargetAttributes = {
 					51A74F5A1D740FC500DA29B0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9UZ6SP5335;
 					};
 					51A74F731D740FC500DA29B0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +364,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A74F6E1D740FC500DA29B0 /* LaunchScreen.storyboard in Resources */,
+				E01A86D41D75327000049301 /* IncomingTableViewCell.xib in Resources */,
+				E01A86D21D7531D800049301 /* OutGoingCellTableViewCell.xib in Resources */,
 				51A74F6B1D740FC500DA29B0 /* Assets.xcassets in Resources */,
 				51A74F691D740FC500DA29B0 /* Main.storyboard in Resources */,
 			);
@@ -265,14 +387,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02EC1AC876E73F65FC47BB65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PubNubIMTests/Pods-PubNubIMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31092696A7073F9678901A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4255D4D95AAB4405F304A593 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PubNubIMTests/Pods-PubNubIMTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477B78916D6913EC7F0D31B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD3A776E7AE779CE43D58EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PubNubIMUITests/Pods-PubNubIMUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9937142DD1452B9A78791AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FFB1D901C6C2C93C3F5B3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PubNubIM/Pods-PubNubIM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F802B2468FBAE057ECBEB73B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PubNubIM/Pods-PubNubIM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		51A74F571D740FC500DA29B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51A750941D743BCE00DA29B0 /* chatMessage.m in Sources */,
 				51A74F661D740FC500DA29B0 /* ViewController.m in Sources */,
 				51A74F631D740FC500DA29B0 /* AppDelegate.m in Sources */,
 				51A74F601D740FC500DA29B0 /* main.m in Sources */,
+				51A750971D7444CC00DA29B0 /* ZZJ_SqliteManager.m in Sources */,
+				E0DC4D691D79242B00E2D3BC /* CMethods.m in Sources */,
+				E01A86D71D75339000049301 /* MessageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,28 +662,39 @@
 		};
 		51A74F891D740FC500DA29B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30194C9D3196BB9228037D58 /* Pods-PubNubIM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PubNubIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nn.PubNubIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		51A74F8A1D740FC500DA29B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8183BB2B6A4D31A76E1D9023 /* Pods-PubNubIM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PubNubIM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nn.PubNubIM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		51A74F8C1D740FC500DA29B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9191636F5A36C8BC12F35C /* Pods-PubNubIMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PubNubIMTests/Info.plist;
@@ -447,6 +707,7 @@
 		};
 		51A74F8D1D740FC500DA29B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220388536F732E68945B7A2E /* Pods-PubNubIMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PubNubIMTests/Info.plist;
@@ -459,6 +720,7 @@
 		};
 		51A74F8F1D740FC500DA29B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6626CBD14483FFB3AD59CF01 /* Pods-PubNubIMUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PubNubIMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -470,6 +732,7 @@
 		};
 		51A74F901D740FC500DA29B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE1788C60246172684994E33 /* Pods-PubNubIMUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PubNubIMUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -498,6 +761,7 @@
 				51A74F8A1D740FC500DA29B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51A74F8B1D740FC500DA29B0 /* Build configuration list for PBXNativeTarget "PubNubIMTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +770,7 @@
 				51A74F8D1D740FC500DA29B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51A74F8E1D740FC500DA29B0 /* Build configuration list for PBXNativeTarget "PubNubIMUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +779,7 @@
 				51A74F901D740FC500DA29B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

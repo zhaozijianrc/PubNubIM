@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+typedef NS_ENUM(int, MessageDirection) {
+    Incoming,
+    Outgoing,
+};
+@interface chatMessage :NSObject
+@property (nonatomic,assign) MessageDirection direction;
 
-@interface chatMessage : NSObject
-
+@property (nonatomic,strong) NSString *megText;
+//@property (nonatomic,strong) NSString *OutGoing;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "CMethods.h"
 @interface AppDelegate ()
 
 @end
@@ -16,30 +16,55 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    PNConfiguration *configuration = [PNConfiguration configurationWithPublishKey:@"pub-c-59022be4-3c21-4f9f-ae0f-98bce9122f4e" subscribeKey:@"sub-c-77af983c-6dd6-11e6-9259-0619f8945a4f"];
+    self.client = [PubNub clientWithConfiguration:configuration];
+    [self.client addListener:self];
+    [self.client subscribeToChannels:@[@"my_channel12"] withPresence:YES];
+//    [self.client subscribeToChannelGroups:@[@"channelGroup_22"] withPresence:NO];
+
+    self.userId = getUniqueStrByUUID();
+    
+    NSLog(@"代理里的uuid%@",self.userId);
+
     return YES;
+    
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+#pragma mark -- pubdelegate
+//接收到信息
+
+
+- (void)client:(PubNub *)client didReceiveMessage:(PNMessageResult *)message {
+    
+    // Handle new message stored in message.data.message
+    if (message.data.actualChannel) {
+        
+        // Message has been received on channel group stored in message.data.subscribedChannel.
+    }
+    else {
+        
+        // Message has been received on channel stored in message.data.subscribedChannel.
+    }
+    
+   
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"RESAVEMESSAGE" object:message.data.message];
+    
+    NSLog(@"嘿嘿Received message: %@ on channel %@ at %@", message.data.message,
+          message.data.subscribedChannel, message.data.timetoken);
+    
+    NSString *MSG = message.data.message[@"text"];
+
+    NSLog(@"哈哈哈%@",MSG);
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+- (NSString *)randomString {
+    return [NSString stringWithFormat:@"%d", arc4random_uniform(74)];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 @end

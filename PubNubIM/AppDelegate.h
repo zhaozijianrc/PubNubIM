@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PubNub.h"
+#import "chatMessage.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate,PNObjectEventListener>
+
+
 
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property (nonatomic) PubNub *client;
+@property (nonatomic,strong) chatMessage *message;
+@property (nonatomic,strong) NSString *userId;
 @end
 
